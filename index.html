@@ -1,0 +1,560 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="以南京保卫战中的民众贡献为主题的历史科普网页，包含记忆地图、档案证据与课堂任务。">
+    <title>南京保卫战中的民众 | 公共记忆地图</title>
+    <link rel="stylesheet" href="styles.css?v=4">
+  </head>
+  <body>
+    <svg class="icon-sprite" aria-hidden="true">
+      <symbol id="icon-map" viewBox="0 0 24 24">
+        <path d="M14.1 5.6a2 2 0 0 0 1.8 0l3.7-1.8A1 1 0 0 1 21 4.6v12.8a1 1 0 0 1-.6.9l-4.5 2.3a2 2 0 0 1-1.8 0l-4.2-2.1a2 2 0 0 0-1.8 0l-3.7 1.8A1 1 0 0 1 3 19.4V6.6a1 1 0 0 1 .6-.9l4.5-2.3a2 2 0 0 1 1.8 0z"></path>
+        <path d="M15 5.8v15M9 3.2v15"></path>
+      </symbol>
+      <symbol id="icon-search" viewBox="0 0 24 24">
+        <circle cx="11" cy="11" r="8"></circle>
+        <path d="m21 21-4.3-4.3"></path>
+      </symbol>
+      <symbol id="icon-layers" viewBox="0 0 24 24">
+        <path d="m12 2 9 5-9 5-9-5z"></path>
+        <path d="m3 12 9 5 9-5M3 17l9 5 9-5"></path>
+      </symbol>
+      <symbol id="icon-book" viewBox="0 0 24 24">
+        <path d="M12 7v14"></path>
+        <path d="M3 18a2 2 0 0 0 2 2h7V7H5a2 2 0 0 0-2 2z"></path>
+        <path d="M21 18a2 2 0 0 1-2 2h-7V7h7a2 2 0 0 1 2 2z"></path>
+      </symbol>
+      <symbol id="icon-users" viewBox="0 0 24 24">
+        <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path>
+        <circle cx="9" cy="7" r="4"></circle>
+        <path d="M22 21v-2a4 4 0 0 0-3-3.9M16 3.1a4 4 0 0 1 0 7.8"></path>
+      </symbol>
+      <symbol id="icon-pin" viewBox="0 0 24 24">
+        <path d="M20 10c0 5-8 12-8 12S4 15 4 10a8 8 0 1 1 16 0z"></path>
+        <circle cx="12" cy="10" r="3"></circle>
+      </symbol>
+      <symbol id="icon-x" viewBox="0 0 24 24">
+        <path d="M18 6 6 18M6 6l12 12"></path>
+      </symbol>
+      <symbol id="icon-check" viewBox="0 0 24 24">
+        <path d="m20 6-11 11-5-5"></path>
+      </symbol>
+      <symbol id="icon-info" viewBox="0 0 24 24">
+        <circle cx="12" cy="12" r="10"></circle>
+        <path d="M12 16v-4M12 8h.01"></path>
+      </symbol>
+      <symbol id="icon-rotate" viewBox="0 0 24 24">
+        <path d="M3 12a9 9 0 1 0 3-6.7L3 8"></path>
+        <path d="M3 3v5h5"></path>
+      </symbol>
+      <symbol id="icon-arrow" viewBox="0 0 24 24">
+        <path d="M5 12h14M13 6l6 6-6 6"></path>
+      </symbol>
+      <symbol id="icon-clock" viewBox="0 0 24 24">
+        <circle cx="12" cy="12" r="9"></circle>
+        <path d="M12 7v5l3 2"></path>
+      </symbol>
+      <symbol id="icon-external" viewBox="0 0 24 24">
+        <path d="M15 3h6v6M10 14 21 3M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+      </symbol>
+    </svg>
+
+    <a class="skip-link" href="#main">跳到主要内容</a>
+
+    <header class="site-header">
+      <a class="brand" href="#memory-map" aria-label="返回页面顶部">
+        <span class="brand-mark" aria-hidden="true">宁</span>
+        <span class="brand-copy">
+          <strong>南京民众与城市保卫</strong>
+          <small>公共记忆档案 · 1937.11—1938.5</small>
+        </span>
+      </a>
+      <nav class="site-nav" aria-label="页面导航">
+        <a href="#memory-map">记忆地图</a>
+        <a href="#history">历史脉络</a>
+        <a href="#actions">六类行动</a>
+        <a href="#evidence">档案证据</a>
+        <a href="#classroom">课堂任务</a>
+      </nav>
+      <button class="icon-text-button" id="aboutButton" type="button">
+        <svg class="icon" aria-hidden="true"><use href="#icon-info"></use></svg>
+        说明
+      </button>
+    </header>
+
+    <main id="main">
+      <section class="content-band map-section map-first" id="memory-map" aria-labelledby="pageTitle">
+        <div class="page-width">
+          <div class="map-hero">
+      <div class="map-hero-copy">
+        <p class="eyebrow">1937.11—1938.5 / 南京公共记忆档案</p>
+        <h1 id="pageTitle">南京保卫战中的民众</h1>
+        <p class="intro-lead">
+          从下关到中华门，从金陵女大到鼓楼医院，把分散在档案、日记、报刊与口述中的普通人行动重新放回城市空间。
+        </p>
+        <a class="intro-source-link" href="https://www.19371213.com.cn/research/publications/202305/t20230509_3906312.html" target="_blank" rel="noopener">
+          进入纪念馆南京保卫战研究专题
+          <svg class="icon" aria-hidden="true"><use href="#icon-external"></use></svg>
+        </a>
+      </div>
+      <dl class="quick-stats" aria-label="页面内容概览">
+        <div>
+<dt>12</dt>
+<dd>个地图点位</dd>
+</div>
+        <div>
+<dt>6</dt>
+<dd>类民众行动</dd>
+</div>
+        <div>
+<dt>13</dt>
+<dd>组核心来源</dd>
+</div>
+      </dl>
+    </div>
+<div class="map-toolbar">
+            <label class="search-box" for="siteSearch">
+              <svg class="icon" aria-hidden="true"><use href="#icon-search"></use></svg>
+              <input id="siteSearch" type="search" placeholder="搜索地点、人物或行动" autocomplete="off">
+            </label>
+            <div class="filter-group" id="filterGroup" aria-label="按贡献类型筛选">
+              <button class="filter-chip is-active" type="button" data-filter="all" aria-pressed="true">全部</button>
+              <button class="filter-chip" type="button" data-filter="shelter" aria-pressed="false">疏散安置</button>
+              <button class="filter-chip" type="button" data-filter="medical" aria-pressed="false">医疗救护</button>
+              <button class="filter-chip" type="button" data-filter="transport" aria-pressed="false">物资运输</button>
+              <button class="filter-chip" type="button" data-filter="defense" aria-pressed="false">城市保障</button>
+              <button class="filter-chip" type="button" data-filter="relief" aria-pressed="false">慈善掩埋</button>
+              <button class="filter-chip" type="button" data-filter="memory" aria-pressed="false">见证记忆</button>
+            </div>
+            <button class="reset-button" id="resetButton" type="button">
+              <svg class="icon" aria-hidden="true"><use href="#icon-rotate"></use></svg>
+              重置
+            </button>
+          </div>
+
+          <div class="map-layout">
+            <div class="map-panel">
+              <div class="map-frame">
+                <svg class="map-base" viewBox="0 0 800 560" role="img" aria-label="南京历史地名示意图">
+                  <rect width="800" height="560" fill="#e8ece8"></rect>
+                  <g class="map-grid" aria-hidden="true">
+                    <path d="M0 80h800M0 160h800M0 240h800M0 320h800M0 400h800M0 480h800"></path>
+                    <path d="M100 0v560M200 0v560M300 0v560M400 0v560M500 0v560M600 0v560M700 0v560"></path>
+                  </g>
+                  <path class="river-shape" d="M0 500 C110 468 185 518 282 470 C385 420 445 489 548 445 C640 407 713 427 800 388 L800 560 L0 560 Z"></path>
+                  <path class="city-wall" d="M245 95 L555 95 L650 220 L620 395 L500 465 L300 430 L205 305 L220 165 Z"></path>
+                  <g class="main-roads" aria-hidden="true">
+                    <path d="M220 300 C320 280 450 270 650 220"></path>
+                    <path d="M400 95 C390 210 395 330 390 465"></path>
+                    <path d="M245 390 C360 360 475 350 620 395"></path>
+                    <path d="M300 120 C345 230 445 320 590 390"></path>
+                  </g>
+                  <path class="safe-zone" d="M280 165 C335 130 430 130 470 165 L500 315 C450 365 345 370 285 325 Z"></path>
+                  <g class="map-labels" aria-hidden="true">
+                    <text x="49" y="530">长江</text>
+                    <text x="349" y="106">和平门</text>
+                    <text x="573" y="190">玄武湖方向</text>
+                    <text x="238" y="160">宁海路</text>
+                    <text x="426" y="126">鼓楼</text>
+                    <text x="545" y="315">新街口</text>
+                    <text x="493" y="435">中华门</text>
+                    <text x="638" y="350">光华门</text>
+                    <text x="552" y="498">雨花台</text>
+                    <text x="260" y="460">下关</text>
+                  </g>
+                </svg>
+                <div class="map-markers" id="mapMarkers"></div>
+                <div class="map-legend">
+                  <span><i class="legend-dot legend-dot-red"></i>已证实</span>
+                  <span><i class="legend-dot legend-dot-teal"></i>基本可信</span>
+                  <span><i class="legend-dot legend-dot-amber"></i>待考 / 口述</span>
+                </div>
+              </div>
+              <div class="place-list-wrap">
+                <p class="place-list-heading" id="resultCount" aria-live="polite">显示 12 个点位</p>
+                <div class="place-list" id="placeList"></div>
+              </div>
+            </div>
+
+            <aside class="detail-panel" id="detailPanel" aria-live="polite"></aside>
+          </div>
+        </div>
+      </section>
+
+      <section class="history-band" id="history" aria-labelledby="historyTitle">
+        <div class="page-width">
+          <div class="section-heading history-heading">
+            <div>
+              <p class="section-index">02 / CHRONOLOGY</p>
+              <h2 id="historyTitle">从首都到孤城</h2>
+            </div>
+            <p class="section-note">南京保卫战不是突然发生的一场城垣战斗。疏散、空袭、迁都、安全区筹设与城陷后的救援，共同构成民众行动的历史背景。</p>
+          </div>
+
+          <div class="archive-plates" aria-label="历史档案图像">
+            <figure>
+              <img src="assets/final-order.jpg" alt="南京保卫战最后一道作战命令复印件">
+              <figcaption>
+                <strong>最后一道坚守命令</strong>
+                1937年12月11日24时发出，12月12日南京战场仍在抵抗。
+                <a href="https://www.19371213.com.cn/research/publications/202305/t20230509_3906312.html" target="_blank" rel="noopener">查看纪念馆原文</a>
+              </figcaption>
+            </figure>
+            <figure>
+              <img src="assets/archive-books.jpg" alt="南京保卫战档案丛书照片">
+              <figcaption>
+                <strong>史料丛书</strong>
+                档案、口述史、碉堡调查与报刊汇编共同构成南京保卫战研究基础。
+                <a href="https://www.19371213.com.cn/research/publications/202305/t20230509_3906312.html" target="_blank" rel="noopener">查看纪念馆原文</a>
+              </figcaption>
+            </figure>
+          </div>
+
+          <div class="chronicle">
+      <div class="chronicle-head">
+        <div class="chronicle-year">1937<span>—1938</span>
+</div>
+        <div>
+          <p>南京城市纪事 / CHRONICLE OF THE CITY</p>
+          <strong>九个节点，记录一座首都如何在战争、迁都、围城与沦陷中改变普通人的生活。</strong>
+        </div>
+      </div>
+
+      <div class="chronicle-acts">
+        <details class="chronicle-act" open>
+          <summary>
+            <span class="chronicle-number">I</span>
+            <span class="chronicle-title"><small>1937.07—11</small><strong>战争逼近首都</strong></span>
+            <span class="chronicle-toggle" aria-hidden="true">+</span>
+          </summary>
+          <ol class="chronicle-events">
+            <li class="chronicle-event">
+              <time datetime="1937-07-07"><span>07.07</span><small>1937</small></time>
+              <div class="chronicle-copy">
+                <h3>全民族抗战爆发</h3>
+                <p>战争由华北扩大为全国性抗战，南京逐步进入战时状态。</p>
+                <a href="https://www.nju.edu.cn/info/3191/141901.htm" target="_blank" rel="noopener">S2 南京大学史料集说明</a>
+              </div>
+            </li>
+            <li class="chronicle-event">
+              <time datetime="1937-08-15"><span>08.15</span><small>1937</small></time>
+              <div class="chronicle-copy">
+                <h3>日机首次空袭南京</h3>
+                <p>空袭推动居民迁移、防空组织和城市应急，也加剧了机关、学校与企业的内迁。</p>
+                <a href="https://www.nju.edu.cn/info/3191/141901.htm" target="_blank" rel="noopener">S2 南京大学史料集说明</a>
+              </div>
+            </li>
+            <li class="chronicle-event">
+              <time datetime="1937-11-12"><span>11.12</span><small>1937</small></time>
+              <div class="chronicle-copy">
+                <h3>上海失守，南京成为前线</h3>
+                <p>日军沿沪宁线西进，南京人口疏散、物资转移和伤员后送进入高峰。</p>
+                <a href="https://www.las.ac.cn/front/book/detail?id=5f1eea954ac287fb461a925b1ee584e7" target="_blank" rel="noopener">S1《南京保卫战档案》</a>
+              </div>
+            </li>
+          </ol>
+        </details>
+
+        <details class="chronicle-act" open>
+          <summary>
+            <span class="chronicle-number">II</span>
+            <span class="chronicle-title"><small>1937.11—12</small><strong>孤城与安全区</strong></span>
+            <span class="chronicle-toggle" aria-hidden="true">+</span>
+          </summary>
+          <ol class="chronicle-events">
+            <li class="chronicle-event">
+              <time datetime="1937-11-20"><span>11.20</span><small>1937</small></time>
+              <div class="chronicle-copy">
+                <h3>国民政府宣布移驻重庆</h3>
+                <p>政府机关、学校、企业和部分居民陆续西迁，留在南京的人则面对交通、费用与家庭照护的现实选择。</p>
+                <a href="https://lswb.njnu.edu.cn/info/1050/9206.htm" target="_blank" rel="noopener">S11 张连红人口研究目录</a>
+              </div>
+            </li>
+            <li class="chronicle-event">
+              <time datetime="1937-11-22"><span>11.22</span><small>1937</small></time>
+              <div class="chronicle-copy">
+                <h3>安全区筹建与交涉</h3>
+                <p>留在南京的中外人士筹设安全区，依托金陵大学、金陵女子文理学院与鼓楼医院等机构收容难民。</p>
+                <a href="http://dangshi.people.com.cn/n/2014/1215/c85037-26208132.html" target="_blank" rel="noopener">S13 人民网南京安全区报道</a>
+              </div>
+            </li>
+            <li class="chronicle-event">
+              <time datetime="1937-12-07"><span>12.07</span><small>1937</small></time>
+              <div class="chronicle-copy">
+                <h3>军队被要求撤离安全区</h3>
+                <p>军事设施与安全区边界的矛盾持续存在，安全区并非脱离中国军政系统而独立运作的空间。</p>
+                <a href="https://www.krzzjn.com/show-1232-34401.html" target="_blank" rel="noopener">S10 张连红安全区研究</a>
+              </div>
+            </li>
+          </ol>
+        </details>
+
+        <details class="chronicle-act" open>
+          <summary>
+            <span class="chronicle-number">III</span>
+            <span class="chronicle-title"><small>1937.12—1938.05</small><strong>城陷与余烬</strong></span>
+            <span class="chronicle-toggle" aria-hidden="true">+</span>
+          </summary>
+          <ol class="chronicle-events">
+            <li class="chronicle-event">
+              <time datetime="1937-12-13"><span>12.13</span><small>1937</small></time>
+              <div class="chronicle-copy">
+                <h3>南京沦陷与大屠杀开始</h3>
+                <p>城陷后，难民收容、医疗救护、施粥、掩埋和证据保存成为民众行动的新阶段。</p>
+                <a href="https://www.saac.gov.cn/zt/2014-12/10/content_77202.htm" target="_blank" rel="noopener">S3 国家档案局红十字会埋尸记录</a>
+              </div>
+            </li>
+            <li class="chronicle-event">
+              <time datetime="1937-12-24"><span>12.24</span><small>1937</small></time>
+              <div class="chronicle-copy">
+                <h3>红十字会工作队开始登记掩埋</h3>
+                <p>第一工作队在和平门、第二工作队在下关按日期与地点记录掩埋数量，形成可核对的连续档案。</p>
+                <a href="https://www.saac.gov.cn/zt/2014-12/10/content_77202.htm" target="_blank" rel="noopener">S3 国家档案局红十字会埋尸记录</a>
+              </div>
+            </li>
+            <li class="chronicle-event">
+              <time datetime="1938-05-31"><span>05.31</span><small>1938</small></time>
+              <div class="chronicle-copy">
+                <h3>救援记录延续到城陷之后</h3>
+                <p>红十字会第一工作队掩埋统计持续至1938年5月31日，说明民众贡献并未随战斗结束而中止。</p>
+                <a href="https://www.saac.gov.cn/zt/2014-12/10/content_77202.htm" target="_blank" rel="noopener">S3 国家档案局红十字会埋尸记录</a>
+              </div>
+            </li>
+          </ol>
+        </details>
+      </div>
+    </div>
+<div class="context-numbers" aria-label="南京保卫战背景数据">
+            <div>
+              <strong>1,015,450</strong>
+              <span>1937年6月南京人口</span>
+              <small>《南京市政府关于分发本市生死统计表训令》</small>
+            </div>
+            <div>
+              <strong>3.86</strong>
+              <span>南京安全区面积（平方公里）</span>
+              <small>约占当时南京城区面积八分之一</small>
+            </div>
+            <div>
+              <strong>25</strong>
+              <span>安全区内难民收容所</span>
+              <small>依托学校、医院与公共建筑</small>
+            </div>
+            <div>
+              <strong>450</strong>
+              <span>市政调派维持秩序的警察</span>
+              <small>另有粮食、面粉、现金与场地支持</small>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="content-band" id="actions" aria-labelledby="actionsTitle">
+        <div class="page-width">
+          <div class="section-heading">
+            <div>
+              <p class="section-index">03 / ACTIONS</p>
+              <h2 id="actionsTitle">六类行动，不是六种身份</h2>
+            </div>
+            <p class="section-note">同一个人可能在一天内转换多个角色，分类记录的是行动功能。</p>
+          </div>
+          <div class="action-grid" id="actionGrid"></div>
+        </div>
+      </section>
+
+      <section class="content-band evidence-section" id="evidence" aria-labelledby="evidenceTitle">
+        <div class="page-width">
+          <div class="section-heading">
+            <div>
+              <p class="section-index">04 / EVIDENCE</p>
+              <h2 id="evidenceTitle">让每段叙述回到原始材料</h2>
+            </div>
+            <p class="section-note">档案中的数字、日记中的目击和口述中的细节承担不同证明任务。</p>
+          </div>
+
+          <div class="evidence-layout">
+            <article class="feature-story" aria-labelledby="storyTitle">
+              <p class="story-kicker">一个人 / 84天 / 3万余字</p>
+              <h3 id="storyTitle">程瑞芳：在难民所里留下证词</h3>
+              <p>
+                程瑞芳是金陵女子文理学院舍监。南京沦陷前后，她协助魏特琳管理难民收容所，并在1937年12月8日至1938年3月1日写下三万余字日记。
+              </p>
+              <blockquote>
+                “真是凄惨，不知明天还要闹出什么事来呢！”
+                <cite>《程瑞芳日记》，1937年12月13日</cite>
+              </blockquote>
+              <p>
+                这部日记记录收容所管理、妇女儿童处境和城内暴行，后来成为南京大屠杀档案的重要组成部分，也能与《魏特琳日记》和《拉贝日记》相互印证。
+              </p>
+              <a class="source-button" href="https://www.19371213.com.cn/learn/zijin/202306/t20230613_3934422.html" target="_blank" rel="noopener">
+                <svg class="icon" aria-hidden="true"><use href="#icon-book"></use></svg>
+                查看程瑞芳日记来源
+                <svg class="icon" aria-hidden="true"><use href="#icon-external"></use></svg>
+              </a>
+            </article>
+
+            <section class="archive-reader" aria-labelledby="archiveTitle">
+              <div class="archive-header">
+                <div>
+                  <p class="story-kicker">档案阅读</p>
+                  <h3 id="archiveTitle">同一场掩埋，为什么要保留不同数字</h3>
+                </div>
+                <span class="status-badge status-confirmed">已证实</span>
+              </div>
+              <p>
+                南京市档案馆藏《中国红十字会南京分会埋尸记录》按工作队、日期和地点登记掩埋数量。第一工作队在和平门一带记录5,704具，第二工作队在下关一带记录3,425具；两组统计的时间段并不完全等同。
+              </p>
+              <div class="number-grid" aria-label="红十字会埋尸记录中的两组数字">
+                <div>
+                  <strong>5,704</strong>
+                  <span>和平门 · 第一工作队</span>
+                  <small>1937.12.24—1938.1.6前</small>
+                </div>
+                <div>
+                  <strong>3,425</strong>
+                  <span>下关 · 第二工作队</span>
+                  <small>1937.12.24—1938.1.6前</small>
+                </div>
+              </div>
+              <p class="reader-note">
+                崇善堂档案又记录了4支“崇字掩埋队”、16个收尸处以及109,363与112,267两种统计口径。数字差异来自统计范围、时间和材料形成过程，不能直接相加或简单平均。
+              </p>
+              <a class="source-button" href="https://www.saac.gov.cn/zt/2014-12/10/content_77202.htm" target="_blank" rel="noopener">
+                <svg class="icon" aria-hidden="true"><use href="#icon-book"></use></svg>
+                查看红十字会埋尸档案
+                <svg class="icon" aria-hidden="true"><use href="#icon-external"></use></svg>
+              </a>
+            </section>
+          </div>
+
+          <div class="source-library">
+            <div class="source-library-heading">
+              <div>
+                <h3>核心史料目录</h3>
+                <p>页面中的来源编号均可直接打开对应书目、档案说明或纪念馆专题。</p>
+              </div>
+              <span class="source-count">13组</span>
+            </div>
+            <div class="source-list" id="sourceList"></div>
+          </div>
+
+          <section class="ask-panel" aria-labelledby="askTitle">
+            <div class="ask-heading">
+              <div>
+                <p class="story-kicker">证据问答演示</p>
+                <h3 id="askTitle">问一件有材料支持的事</h3>
+              </div>
+              <span class="status-badge status-basic">仅检索已审核资料</span>
+            </div>
+            <form class="ask-form" id="askForm">
+              <label class="sr-only" for="askInput">输入关于南京保卫战民众贡献的问题</label>
+              <input id="askInput" type="text" placeholder="例如：下关发生了什么？">
+              <button class="primary-button" type="submit">
+                检索
+                <svg class="icon" aria-hidden="true"><use href="#icon-arrow"></use></svg>
+              </button>
+            </form>
+            <div class="suggestion-row" id="suggestionRow">
+              <button type="button" data-question="下关发生了什么">下关发生了什么</button>
+              <button type="button" data-question="程瑞芳做了什么">程瑞芳做了什么</button>
+              <button type="button" data-question="红十字会怎样掩埋">红十字会怎样掩埋</button>
+            </div>
+            <div class="ask-answer" id="askAnswer" aria-live="polite">
+              回答只从本页史料库中提取，并附来源编号与证据等级。
+            </div>
+          </section>
+        </div>
+      </section>
+
+      <section class="content-band classroom-section" id="classroom" aria-labelledby="classroomTitle">
+        <div class="page-width">
+          <div class="section-heading">
+            <div>
+              <p class="section-index">05 / CLASSROOM</p>
+              <h2 id="classroomTitle">三个可以带进课堂的任务</h2>
+            </div>
+            <p class="section-note">勾选完成状态，进度保存在当前浏览器中。</p>
+          </div>
+
+          <div class="classroom-progress" aria-label="课堂任务完成进度">
+            <div>
+              <span id="taskProgressText">0 / 12 项任务步骤已完成</span>
+              <div class="progress-track"><span id="taskProgressBar"></span></div>
+            </div>
+            <button class="reset-button" id="resetTasks" type="button">
+              <svg class="icon" aria-hidden="true"><use href="#icon-rotate"></use></svg>
+              重置任务
+            </button>
+          </div>
+
+          <div class="task-grid">
+            <article class="task-card">
+              <span class="task-number">任务一</span>
+              <h3>一张地图上的选择</h3>
+              <p>从家庭人口、路费、交通和照护责任出发，讨论谁能够离开、谁被迫留下。</p>
+              <label><input type="checkbox" data-task="t1-a"> 找出影响撤离的四个条件</label>
+              <label><input type="checkbox" data-task="t1-b"> 在地图上标出两条撤离方向</label>
+              <label><input type="checkbox" data-task="t1-c"> 用一段话解释“留下”不等于“等待”</label>
+              <label><input type="checkbox" data-task="t1-d"> 对照人口统计修正判断</label>
+            </article>
+            <article class="task-card">
+              <span class="task-number">任务二</span>
+              <h3>一份埋尸档案怎么读</h3>
+              <p>比较红十字会、崇善堂和战后统计表的工作队、时间、地点与统计范围。</p>
+              <label><input type="checkbox" data-task="t2-a"> 列出三种材料的统计单位</label>
+              <label><input type="checkbox" data-task="t2-b"> 找出两组不一致的数字</label>
+              <label><input type="checkbox" data-task="t2-c"> 说明为何不能直接相加</label>
+              <label><input type="checkbox" data-task="t2-d"> 写出还需要查找的一条旁证</label>
+            </article>
+            <article class="task-card">
+              <span class="task-number">任务三</span>
+              <h3>谁在维持城市</h3>
+              <p>从警察、校工、医护和慈善人员的行为，分析城市运行依赖哪些人和网络。</p>
+              <label><input type="checkbox" data-task="t3-a"> 选择一个行动节点</label>
+              <label><input type="checkbox" data-task="t3-b"> 标出参与者和物资流向</label>
+              <label><input type="checkbox" data-task="t3-c"> 区分自愿、职业义务与被迫合作</label>
+              <label><input type="checkbox" data-task="t3-d"> 用“人物—行动—来源”完成证据链</label>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="closing-band">
+        <div class="page-width closing-grid">
+          <div>
+            <p class="section-index">READING THE CITY</p>
+            <h2>从城市空间理解民众行动</h2>
+          </div>
+          <p>
+            南京保卫战中的民众贡献分布在码头、城门、医院、学校、教堂、难民所和慈善机构之间。把这些地点放回地图，能看见资源如何转移、风险如何分布，以及普通人在极端条件下的选择与代价。
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="page-width footer-grid">
+        <p>南京保卫战民众贡献研究 · 历史科普网页</p>
+        <p>史料内容待项目组与指导教师继续核校。地图为历史地名示意。</p>
+      </div>
+    </footer>
+
+    <dialog class="source-dialog" id="aboutDialog" aria-labelledby="aboutDialogTitle">
+      <div class="dialog-heading">
+        <h2 id="aboutDialogTitle">关于本页</h2>
+        <button class="icon-button" id="closeAboutDialog" type="button" aria-label="关闭说明窗口">
+          <svg class="icon" aria-hidden="true"><use href="#icon-x"></use></svg>
+        </button>
+      </div>
+      <div class="about-copy">
+        <p>本页是南京保卫战民众贡献研究的公共历史专题，重点呈现非战斗民众在疏散、救护、运输、城市保障、慈善救济和记忆保存中的行动。</p>
+        <p>地图点位使用相对位置表达历史地名关系，不用于精确导航。每条记录区分“已证实”“基本可信”“待考”等证据状态。</p>
+        <p>证据问答只检索本页已收录材料，不生成虚构证言，也不把口述回忆自动等同于事实。</p>
+      </div>
+    </dialog>
+
+    <script src="app.js?v=3"></script>
+  </body>
+</html>
